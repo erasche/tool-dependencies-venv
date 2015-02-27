@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<tool_dependency>
+    <package name="kent" version="312">
+        <install version="1.0">
+            <actions>
+                <action type="download_by_url">http://hgdownload.soe.ucsc.edu/admin/jksrc.v312.zip</action>
+                <action type="change_directory">kent/src/lib/</action>
+                <action type="shell_command">make</action>
+                <action type="shell_command">mv x86_64/jkweb.a $INSTALL_DIR/lib/</action>
+                <action type="change_directory">../utils/</action>
+                <action type="shell_command">make</action>
+                <action type="shell_command">deactivate </action>
+            </actions>
+        </install>
+        <readme>
+        </readme>
+    </package>
+</tool_dependency>
