@@ -10,9 +10,9 @@ Example of use:
 
 ```console
 esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc⟫ . activate.sh
-(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc/kent/src/utils⟫ wget http://hgdownload.soe.ucsc.edu/admin/jksrc.v312.zip
-(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc/kent/src/utils⟫ unzip jksrc.v312.zip
-(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc/kent/src/utils⟫ cd kent/src/lib/
+(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc⟫ wget http://hgdownload.soe.ucsc.edu/admin/jksrc.v312.zip
+(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc⟫ unzip jksrc.v312.zip
+(remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc⟫ cd kent/src/lib/
 (remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc/kent/src/utils⟫ make
 ...
 (remember-me) esr@cpt:~/Projects/galaxy/tools-iuc/tools/ucsc/kent/src/utils⟫ mv x86_64/jkweb.a $INSTALL_DIR/lib/
