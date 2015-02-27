@@ -45,6 +45,10 @@ BEGIN {
         print "                <action type=\"download_by_url\">"$2"</action>"
     } else if ($1 == "cd"){
         print "                <action type=\"change_directory\">"$2"</action>"
+    } else if ($1 == "mv"){
+        print "                <action type=\"move_file\"><source>"$2"</source><destination>"$3"</destination></action>"
+    } else if ($1 == "chmod"){
+        print "                <action type=\"chmod\"><file mode=\""$2"\">"$3"</file></source></action>"
     } else if ($1 == "tar"){
         # Ignore tar/unzip of initial directory. TODO: conditionally for the SECOND action, and only if wget/curl.
     } else if ($1 == "unzip"){
