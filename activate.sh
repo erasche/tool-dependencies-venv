@@ -23,8 +23,8 @@ deactivate () {
         STARTED_AT=$(cat $TMPFILE.orig);
         rm $TMPFILE.orig;
         cd "$_ORIG_DIR";
-        # Process the history for just the commands we're interested in
-        history | awk "(\$1>$STARTED_AT){print \$0}" | sed 's|^[0-9]\+\s\+||g' > $TMPFILE
+        # Process the history for just the commands we're interested in, '$d' removes last line
+        history | awk "(\$1>$STARTED_AT){print \$0}" | sed 's|^[0-9]\+\s\+||g' | sed '$d' > $TMPFILE
         # Request package information
         echo -n "Package Name: "
         read package_name
