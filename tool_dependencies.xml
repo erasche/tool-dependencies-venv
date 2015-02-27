@@ -6,7 +6,7 @@
                 <action type="download_by_url">http://hgdownload.soe.ucsc.edu/admin/jksrc.v312.zip</action>
                 <action type="change_directory">kent/src/lib/</action>
                 <action type="shell_command">make</action>
-                <action type="shell_command">mv x86_64/jkweb.a $INSTALL_DIR/lib/</action>
+                <action type="move_file"><source>x86_64/jkweb.a</source><destination>$INSTALL_DIR/lib/</destination></action>
                 <action type="change_directory">../utils/</action>
                 <action type="shell_command">make</action>
                 <action type="shell_command">deactivate </action>
