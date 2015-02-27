@@ -1,6 +1,6 @@
-Shell script to make producing tool_dependencies easier
+Shell script to make producing tool_dependencies easier. It's simple to use, behaves a lot like a venv, and then produces a `tool_dependencies.xml` in the directory where you started when you `deactivate` at the end. 
 
-Simple to activate:
+Pretty to activate:
 
 ```
 . activate.sh
