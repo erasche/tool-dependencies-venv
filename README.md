@@ -2,6 +2,19 @@
 
 While behaving like a virtualenv (go inside, build software), this virtualenv tracks what was done and builds a `tool_dependenceis.xml` file out of the terminal history.
 
+## Features
+
+Currently only a few commands are supported (but PRs/issues welcome!):
+
+ - wget
+ - cd
+ - mv
+ - chmod
+ - tar
+ - unzip
+
+And there are a few bugs (e.g. don't unzip more than once, the second one will disappear).
+
 ## Examples:
 
 Here's an example console session:
